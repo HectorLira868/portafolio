@@ -12,46 +12,47 @@
 </head>
 
 <body>
-    <header class="header-container"> <!--hero-->
-        <div class="div-container"> <!--container-->
-            <nav class="nav-main"> <!--nav*/-->
-                <a href="#" class="nav-item">About</a> /<!--nav-items-->
-                <a href="#" class="nav-item">Portafolio</a> <!--nav-items-->
-                <a href="#" class="nav-item">Contacto</a> <!--nav-items-->
+    <header class="header-container">
+        <div class="div-container">
+            <nav class="nav-main">
+                <a href="#" class="nav-items nav-item-title">HecLM</a>
+                <a href="#about" class="nav-items nat-items-cta">Sobre mi</a>
+                <a href="#projects" class="nav-items">Portafolio</a>
+                <a href="#contact" class="nav-items">Contacto</a>
             </nav>
-            <section class="section-container"> <!--hero__container-->
-                <div class="text-section"> <!--hero__texts-->
-                    <h1 class="title-section"> <!--hero__title-->
+            <section class="section-container">
+                <div class="text-section">
+                    <h1 class="title-section">
                         Hola soy Hector Lira Mancilla [Web Developer]
                     </h1>
-                    <h2 class="subtitle"> <!--hero__subtitle-->
+                    <h2 class="header-subtitle">
                         Nunca es tarde para cambiar tu destino
                     </h2>
-                    <a href="#" class="header-cta">Contactame ahora</a> <!--hero__cta-->
+                    <a href="#contact" class="header-cta">Contactame ahora</a>
                 </div>
             </section>
         </div>
         <div class="wave" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: rgb(68, 45, 168);"></path>
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
     <main class="main">
-        <section class="presentation section-container"> <!--presentation container-->
-            <img src="assets/img/photo.jpeg" class="picture" alt="picture"> <!--presentation__picture-->
+        <section class="presentation div-container" id="about">
+            <img src="assets/img/photo.jpeg" class="picture" alt="picture">
             <h2 class="subtitle">
                 Soy Hector Lira Mancilla
             </h2>
-            <p class="paragraph"><!--presentation__copy-->
+            <p class="paragraph">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dicta natus eum, sed,
                 ipsa enim
                 perspiciatis voluptas labore doloribus provident voluptate eos quo reiciendis temporibus velit mollitia
                 neque omnis quae.
             </p>
-            <a href="#" class="presentation-cta">Contactame ahora</a>
+            <a href="#contact" class="presentation-cta">Contactame ahora</a>
         </section>
-        <section class="about section-container"><!--about container-->
+        <section class="about div-container" id="skills">
             <div class="about-texts">
                 <h2 class="subtitle">Mis habilidades</h2>
                 <p class="about-paragraph">
@@ -93,45 +94,80 @@
                 </p>
             </div>
         </section>
-        <section class="portfolio"><!--projects-->
-            <div class="div-container"> <!--container-->
+        <section class="projects" id="projects">
+            <div class="div-container">
                 <h2 class="subtitle">Mis proyectos</h2>
-                    <div class="projects-item">
-                    <h2 class="project-title">
-
-                        </h2>
-                    </div>
+                <div class="projects-grid">
+                    <article class="projects-item">
+                        <img src="assets/img/img1.png" class="projects-img" alt="img1">
+                        <div class="projects-hover">
+                            <h2 class="projects-title">Proyecto</h2>
+                            <i class="far fa-file-alt projects-icon"></i>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <img src="assets/img/img2.png" class="projects-img" alt="img2">
+                        <div class="projects-hover">
+                            <h2 class="projects-title">Proyecto</h2>
+                            <i class="far fa-file-alt projects-icon"></i>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <img src="assets/img/img3.jpg" class="projects-img" alt="img3">
+                        <div class="projects-hover">
+                            <h2 class="projects-title">Proyecto</h2>
+                            <i class="far fa-file-alt projects-icon"></i>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <img src="assets/img/img4.jpg" class="projects-img" alt="img4">
+                        <div class="projects-hover">
+                            <h2 class="projects-title">Proyecto</h2>
+                            <i class="far fa-file-alt projects-icon"></i>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <img src="assets/img/img5.jpg" class="projects-img" alt="img5">
+                        <div class="projects-hover">
+                            <h2 class="projects-title">Proyecto</h2>
+                            <i class="far fa-file-alt projects-icon"></i>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer-container">
         <div class="div-container footer-grid">
             <nav class="nav-main nav-footer">
-                <a href="" class="nav-item"></a>
-                <a href="" class="nav-item"></a>
-                <a href="" class="nav-item"></a>
-                <a href="" class="nav-item"></a>
-                <a href="" class="nav-item"></a>
+                <a href="#" class="nav-items nav-items-footer">Inicio</a>
+                <a href="#about" class="nav-items nav-items-footer">Sobre mi</a>
+                <a href="#skills" class="nav-items nav-items-footer">Mis kills</a>
+                <a href="#projects" class="nav-items nav-items-footer">Proyectos</a>
             </nav>
-            <section class="footer-contac">
+            <section class="footer-contac" id="contact">
                 <h3 class="footer-title">Contactame</h3>
-                    <div class="footer-icon">
-                        <span class="footer-container-icons">
-                            <a class="fa-brands fa-facebook-f"></a>
-                        </span>
-                        <span class="footer-container-icons">
-                            <a class="fa-brands fa-instagram"></a>
-                        </span>
-                        <span class="footer-container-icons">
-                            <a class="fa-brands fa-whatsapp"></a>
-                        </span>
-                        <span class="footer-container-icons">
-                            <a class="fa-brands fa-linkedin-in"></a>
-                        </span>
-                        <span class="footer-container-icons">
-                            <a class="fa-brands fa-github"></a>
-                        </span>
-                    </div>
+                <div class="footer-icons">
+                    <span class="footer-container-icon">
+                        <a class="fa-brands fa-facebook-f footer-icon"
+                            href="https://www.facebook.com/hector.mancilla21/" target="_blank"></a>
+                    </span>
+                    <span class="footer-container-icon">
+                        <a class="fa-brands fa-instagram footer-icon" href="https://www.instagram.com/thorek_li/"
+                            target="_blank"></a>
+                    </span>
+                    <span class="footer-container-icon">
+                        <a class="fa-brands fa-whatsapp footer-icon" href="https://wa.link/r57ebx" target="_blank"></a>
+                    </span>
+                    <span class="footer-container-icon">
+                        <a class="fa-brands fa-linkedin-in footer-icon"
+                            href="https://www.linkedin.com/in/hector-mancilla-703a17230/ target=" _blank""></a>
+                    </span>
+                    <span class="footer-container-icon">
+                        <a class="fa-brands fa-github footer-icon" href="https://github.com/HectorLira868"
+                            target="_blank"></a>
+                    </span>
+                </div>
             </section>
         </div>
     </footer>

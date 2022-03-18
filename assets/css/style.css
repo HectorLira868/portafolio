@@ -19,21 +19,24 @@ body {
     max-width: 1200px;
 }
 
-/* .subtitle {
+.subtitle {
     color: var(--color-primary);
     font-size: 2.5rem;
     margin-bottom: 35px;
-
 }
 
 .header-container {
     height: 100vh;
-    background-image: var(--background), url('../img/img2.png');
+    background-image: var(--background), url('../img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     position: relative;
+}
+
+.header-container.div-container {
+    padding: 0;
 }
 
 .nav-main {
@@ -44,12 +47,39 @@ body {
     font-weight: 700;
 }
 
-.nav-item {
+.nav-footer {
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav-items {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
     padding: 10px 15px;
     font-weight: inherit;     
+}
+
+.nav-items-cta {
+    border: 1px solid #fff;
+}
+
+.nav-item-title {
+    margin-right: 50%;
+    font-size: 3rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.nav-items-footer {
+    padding: 10px;
+}
+
+.section-container {
+    display: flex;
+    height: calc(100vh - 250px);
+    align-items: center;
+    color: #fff;
 }
 
 .wave {
@@ -69,7 +99,7 @@ body {
     font-size: 3.2rem;
 }
 
-.subtitle {
+.header-subtitle {
     font-size: 2rem;
     font-weight: 300;
     margin: 15px 0;
@@ -84,14 +114,14 @@ body {
     border-radius: 40px;
 }
 
-.presentattion {
+.presentation {
     padding-top: 0;
     text-align: center;
 }
 
 .picture {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-bottom: 10px;
     object-fit: cover;
@@ -103,4 +133,156 @@ body {
     margin: 0 auto;
 }
 
-/* .pres */
+.presentation-cta {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--botton-padding);
+    border-radius: 40px;
+}
+
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-img-left {
+    text-align: left;
+}
+
+.about-picture {
+    max-width: 80%;
+}
+
+.about-paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.projects {
+    background: #f2f2f2;
+}
+
+.projects-grid {
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
+
+.projects-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projects-item:nth-of-type(1){
+    grid-area: img1;
+}
+
+.projects-item:nth-of-type(2){
+    grid-area: img2;
+}
+
+.projects-item:nth-of-type(3){
+    grid-area: img3;
+}
+
+.projects-item:nth-of-type(4){
+    grid-area: img4;
+}
+
+.projects-item:nth-of-type(5){
+    grid-area: img5;
+}
+
+.projects-hover {
+    position: absolute;
+    background: grey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects-item:hover .projects-hover {
+    transform: translateX(0);
+}
+
+.projects-icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.footer-container {
+    background: var(--color-primary);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-title {
+    font-weight: 400;
+    color: #fff;
+    font-style: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer-icon {
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fa-brands.footer-icon {
+    line-height: 60px;
+}
