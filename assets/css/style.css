@@ -286,3 +286,8 @@ body {
 .fa-brands.footer-icon {
     line-height: 60px;
 }
+
+.author {
+    text-align: center;
+    padding-bottom: 30px;
+}
